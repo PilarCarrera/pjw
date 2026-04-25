@@ -545,6 +545,11 @@ body.menu-open::before {
   margin-left: 110px;
 }
 
+.footer-text a {
+  color: #D1C845;
+  text-decoration: underline;
+}
+
 .footer-heading {
   font-weight: 800;
   margin-bottom: 8px;
@@ -893,6 +898,8 @@ body.menu-open::before {
     margin-right: 0;
     margin-left: 0;
     padding: 16px 14px;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-text .eyebrow,
@@ -914,6 +921,9 @@ body.menu-open::before {
   .synopsis {
     font-size: 12px;
     max-width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .when-content {
@@ -1006,13 +1016,23 @@ body.menu-open::before {
     font-size: 16px;
   }
 
+  .contact-section .footer-social:not(.email-card) .footer-handle {
+    font-size: 13px;
+    line-height: 1.25;
+    max-width: 100%;
+    display: block;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    padding: 0 2px;
+  }
+
   .contact-section .footer-social.email-card .footer-handle {
     font-size: 14px;
   }
 
   .contact-section .footer-icons {
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(165px, 1fr));
     gap: 12px;
     width: 100%;
     max-width: 560px;
