@@ -70,7 +70,7 @@ document.addEventListener('keydown', (event) => {
 const enableScrollReveal = () => {
   const footerCopy = document.querySelector('.footer-copy');
   const revealTargets = Array.from(document.querySelectorAll(
-    '.hero-image, .hero-text, .when-content, .tickets, .contact-section, .site-footer'
+    '.hero-image, .hero-text, .when-content, .tickets, .contact-section, .merch-section, .site-footer'
   ));
 
   if (!revealTargets.length) return;

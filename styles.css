@@ -175,6 +175,52 @@ body.menu-open::before {
   color: var(--header-active);
 }
 
+.merch-section {
+  padding-top: 40px;
+}
+
+.merch-content {
+  position: relative;
+  overflow: hidden;
+  background-image: url("Photos/fondomerch.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 20px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
+.merch-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.merch-content h2,
+.merch-content p,
+.merch-content .section-underline,
+.merch-content .merch-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.merch-content h2 {
+  color: var(--header-text);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-size: 40px;
+}
+
+.merch-content p {
+  color: #f5f5f5;
+  font-weight: 700;
+  margin-bottom: 34px;
+  font-size: 24px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(260px, 420px) 1fr;
@@ -971,11 +1017,23 @@ body.menu-open::before {
     padding: 80px 16px;
   }
 
+  .merch-content {
+    padding: 80px 16px;
+  }
+
   .tickets h2 {
     font-size: 24px;
   }
 
+  .merch-content h2 {
+    font-size: 24px;
+  }
+
   .tickets p {
+    font-size: 14px;
+  }
+
+  .merch-content p {
     font-size: 14px;
   }
 
