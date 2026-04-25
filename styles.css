@@ -176,7 +176,7 @@ body.menu-open::before {
 }
 
 .merch-section {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .merch-content {
@@ -1017,8 +1017,29 @@ body.menu-open::before {
     padding: 80px 16px;
   }
 
+  #tickets {
+    padding-bottom: 24px;
+    min-height: auto;
+  }
+
+  #merch {
+    padding-top: 12px;
+    padding-bottom: 30px;
+    min-height: auto;
+  }
+
+  #contacto {
+    padding-top: 40px;
+    min-height: auto;
+  }
+
+  .contact-section {
+    padding-top: 20px;
+  }
+
   .merch-content {
     padding: 80px 16px;
+    background-position: right center;
   }
 
   .tickets h2 {
