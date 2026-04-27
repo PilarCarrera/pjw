@@ -316,7 +316,7 @@ body.menu-open::before {
   position: relative;
   background-image:
     linear-gradient(rgba(209, 200, 69, 0.2), rgba(209, 200, 69, 0.2)),
-    url("Photos/dibujo4_rotated_bright.jpeg");
+    url("Photos/image7.jpeg");
   background-size: cover;
   background-position: center;
   color: #1b1a1a;
@@ -351,10 +351,10 @@ body.menu-open::before {
 
 .when-cards {
   display: grid;
-  grid-template-columns: repeat(4, 284px);
+  grid-template-columns: repeat(3, 284px);
   gap: 36px;
-  justify-content: flex-start;
-  margin-left: 40px;
+  justify-content: center;
+  margin-left: 0;
   align-items: stretch;
 }
 
@@ -404,32 +404,6 @@ body.menu-open::before {
 
 .when-link:hover {
   text-decoration: underline;
-}
-
-.when-photo {
-  position: static;
-  width: 284px;
-  min-height: 284px;
-  margin-left: 62px;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
-  padding: 18px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(-5deg);
-}
-
-.when-photo img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  display: block;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transform: none;
 }
 
 .section-underline {
@@ -763,16 +737,6 @@ body.menu-open::before {
     margin-left: 0;
   }
 
-  .when-photo {
-    min-height: 200px;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .when-photo img {
-    max-height: 170px;
-  }
-
   .site-footer {
     grid-template-columns: 1fr;
     text-align: center;
@@ -851,15 +815,10 @@ body.menu-open::before {
     justify-items: center;
   }
 
-  .when-card,
-  .when-photo {
+  .when-card {
     width: 100%;
     max-width: 300px;
     min-height: 250px;
-  }
-
-  .when-photo {
-    margin-left: 0;
   }
 }
 
@@ -920,15 +879,10 @@ body.menu-open::before {
     justify-items: center;
   }
 
-  .when-card,
-  .when-photo {
+  .when-card {
     width: 100%;
     max-width: 260px;
     min-height: 220px;
-  }
-
-  .when-photo {
-    margin-left: 0;
   }
 }
 
@@ -1008,9 +962,19 @@ body.menu-open::before {
   }
 
   .when-cards {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(165px, 1fr));
     gap: 12px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .when-cards .when-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(220px, 100%);
   }
 
   .tickets {
